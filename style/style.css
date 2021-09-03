@@ -24,7 +24,7 @@ body {
     grid-gap: 30px;
 }
 
-.Spinner {
+.spinner {
     /* animation: wheel 5s linear infinite; */
     margin-top: 150px;
     transform-origin: 101.5px 80.5px;
