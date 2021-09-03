@@ -6,3 +6,76 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background: gray;
+    background-image: url('../images/pexels-pixabay-2150.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    grid-gap: 30px;
+}
+
+.Spinner {
+    /* animation: wheel 5s linear infinite; */
+    margin-top: 150px;
+    transform-origin: 101.5px 80.5px;
+    width: 203px;
+    height: 188px;
+    animation-fill-mode: both;
+    animation-timing-function: step-end;
+    transform: rotate(0deg);
+}
+
+.buttonsContainer>* {
+    box-shadow: 1px 1px 10px rgb(7, 59, 233);
+    border: 1px solid black;
+    background: rgba(253, 253, 255, 0.089);
+    font-size: 25px;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(7, 59, 233), rgb(40, 40, 95), rgb(7, 59, 233) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button {
+    border-radius: 40px;
+    padding: 10px;
+    font-size: 20px !important;
+    cursor: pointer;
+}
+
+.speedUp,
+.speedDown {
+    width: 30px;
+    height: 30px;
+}
+
+.selectionContainer p {
+    display: inline;
+}
+
+#firstAmongus,
+#secondAmongus,
+#thirdAmongus {
+    animation: wheel 5s linear infinite;
+    transform-origin: 40px 38.5px;
+}
+
+@keyframes wheel {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
