@@ -41,7 +41,7 @@ body {
     background: rgba(253, 253, 255, 0.089);
     font-size: 25px;
     font-weight: bold;
-    background: linear-gradient(to right, rgb(7, 59, 233), rgb(40, 40, 95), rgb(7, 59, 233) 100%);
+    background: linear-gradient(to right, rgb(12, 45, 156), rgb(2, 2, 5), rgb(0, 0, 0), rgb(12, 45, 156) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -58,10 +58,34 @@ button {
     width: 30px;
     height: 30px;
 }
+.selectionContainer div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    text-shadow: 1px 3px 15px rgb(148, 170, 243);
+}
 
 .selectionContainer p {
     display: inline;
+    font-size: 20px;
+    font-weight: bold;
 }
+.selectionContainer input{
+    justify-self: right;
+    box-shadow: 1px 1px 6px rgb(7, 59, 233);
+    border: 1px solid black;
+    background: rgba(253, 253, 255, 0.089);
+    border-radius: 25px;
+    padding: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    outline: none;
+}
+.selectionContainer input::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
 
 #firstAmongus,
 #secondAmongus,
